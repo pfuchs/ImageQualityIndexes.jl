@@ -15,6 +15,7 @@ using Base.Iterators: repeated, flatten
 include("generic.jl")
 include("psnr.jl")
 include("ssim.jl")
+include("xsim.jl")
 include("msssim.jl")
 include("colorfulness.jl")
 include("entropy.jl")
@@ -30,6 +31,10 @@ export
     # Structral Similarity
     SSIM,
     assess_ssim,
+
+    # Susceptibility Similarity
+    XSIM,
+    assess_xsim,
 
     # Multi Scale Structural Similarity
     MSSSIM,
